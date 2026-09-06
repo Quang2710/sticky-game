@@ -2801,6 +2801,7 @@ GameObject:
   - component: {fileID: 2029944015}
   - component: {fileID: 2029944013}
   - component: {fileID: 2029944012}
+  - component: {fileID: 2029944017}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -2917,6 +2918,45 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!114 &2029944017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2029944011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59036b29e37cfc5439d1519ab93f64ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: StickmanTrap::StickmanTrap.Player.StickmanAnimator
+  _motor: {fileID: 2029944013}
+  _visualRoot: {fileID: 1455191702}
+  _torso: {fileID: 1700325260}
+  _head: {fileID: 706636974}
+  _armL: {fileID: 418869941}
+  _armR: {fileID: 1538426739}
+  _legL: {fileID: 1063693305}
+  _legR: {fileID: 1542131433}
+  _runStrideBase: 6
+  _runStridePerSpeed: 0.9
+  _legSwing: 48
+  _armSwing: 40
+  _bodyBob: 0.06
+  _runLean: 9
+  _moveThreshold: 0.6
+  _riseTuck: 34
+  _fallSpread: 24
+  _armAir: 46
+  _breathAmp: 0.025
+  _breathSpeed: 2.2
+  _landSquash: 0.2
+  _jumpStretch: 0.14
+  _squashRecover: 9
+  _poseLerp: 14
+  _footPlantCompensation: 0.5
+  _deathAngle: 84
+  _deathLerp: 10
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
