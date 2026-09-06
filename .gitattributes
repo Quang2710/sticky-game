@@ -1,0 +1,28 @@
+# Auto-detect text files, normalize to LF in the repo
+* text=auto
+
+# Unity source / assets are text
+*.cs        text diff=csharp
+*.shader    text
+*.uss       text
+*.uxml      text
+*.asmdef    text
+*.json      text
+*.md        text
+
+# Unity YAML — use UnityYAMLMerge if configured; never auto-merge blindly
+*.unity     merge=unityyamlmerge eol=lf
+*.prefab    merge=unityyamlmerge eol=lf
+*.asset     merge=unityyamlmerge eol=lf
+*.controller merge=unityyamlmerge eol=lf
+*.meta      merge=unityyamlmerge eol=lf
+
+# Binary assets — mark so Git doesn't try to diff/merge them
+*.png  binary
+*.jpg  binary
+*.psd  binary
+*.wav  binary
+*.mp3  binary
+*.ogg  binary
+*.fbx  binary
+*.unitypackage binary
