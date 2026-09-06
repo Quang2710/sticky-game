@@ -20,8 +20,8 @@ MonoBehaviour:
   MaxFallSpeed: 22
   BaseGravityScale: 3.5
   FallMultiplier: 2.2
-  LowJumpMultiplier: 3
+  JumpCutMultiplier: 0.45
   CoyoteTime: 0.1
   JumpBufferTime: 0.12
-  GroundCheckOffset: {x: 0, y: -0.55}
-  GroundCheckSize: {x: 0.42, y: 0.12}
+  GroundCheckOffset: {x: 0, y: -0.72}
+  GroundCheckSize: {x: 0.42, y: 0.16}
